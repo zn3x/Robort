@@ -1,0 +1,19 @@
+[package]
+name = "bitfinex-app"
+version = "0.2.0"
+authors = ["Flavio Oliveira <flavio@wisespace.io>"]
+
+[[bin]]
+name = "private_endpoints"
+path = "src/private_endpoints.rs"
+
+[[bin]]
+name = "public_endpoints"
+path = "src/public_endpoints.rs"
+
+[[bin]]
+name = "public_channels"
+path = "src/public_channels.rs"
+
+[dependencies]
+bitfinex = { path = "../" }
