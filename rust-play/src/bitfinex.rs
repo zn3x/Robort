@@ -17,8 +17,8 @@ use chrono::prelude::*;
 use serde_json::{Value, Error};
 
 struct Ticker {connection: Connection, snap: Arc<Mutex<i32>>, seq: Arc<Mutex<i16>>}
-struct Trades {connection: Connection, snap: Arc<Mutex<i32>>}
-struct Candles {connection: Connection, snap: Arc<Mutex<i32>>, seq: Arc<Mutex<i16>>, last: bool, now: i64}
+struct Trades {connection: Connection}
+struct Candles {connection: Connection, snap: Arc<Mutex<i32>>, seq: Arc<Mutex<i16>>, beat: Arc<Mutex<Heartbeat>>}
 
 impl EventHandler for Ticker {
     fn on_data_event(&mut self, event:DataEvent) {
@@ -51,7 +51,7 @@ impl EventHandler for Trades {
                 (snap_id, exchange, pair, timestamp, trade_id, \
                  amount, price, is_sell) VALUES \
                  ($1, $2, $3, $4, $5, $6, $7, $8)",
-                 &[&*self.snap.lock().unwrap(), &(1 as i16), &(1 as i16), &get_utc_from_ms(trade.mts), &(trade.id as i32),
+                 &[&(1 as i32), &(1 as i16), &(1 as i16), &get_utc_from_ms(trade.mts), &(trade.id as i32),
                 &trade.amount, &trade.price, &is_sell]).unwrap();
             }
         }
@@ -78,10 +78,12 @@ pub fn get_utc_from_s(timestamp: i64) -> chrono::DateTime<Utc> {
 impl EventHandler for Candles {
     fn on_data_event(&mut self, event:DataEvent) {
         if let DataEvent::CandlesUpdateEvent(channel, candle) = event {
-            if self.last { //handle old values
-                if candle.timestamp == self.now { //this is finalized new information; let's go!
-                    println!("{}", Utc::now());
-
+            let mut beatlock = self.beat.lock().unwrap();
+                let (now, last) = ((*beatlock).now, (*beatlock).last);
+                (*beatlock).now = candle.timestamp;
+                if candle.timestamp == now && candle.timestamp != last { //this is finalized new information; let's go!
+                    (*beatlock).last = candle.timestamp;
+                    drop(beatlock);
                     //increment the snap id and reset the seq to zero
                     let mut snaplock = self.snap.lock().unwrap();
                     let mut seqlock = self.seq.lock().unwrap();
@@ -117,13 +119,9 @@ impl EventHandler for Candles {
                         let _ = kid.join();
                     }
                     println!("{}", Utc::now());
-
+                } else {
+                    drop(beatlock);
                 }
-                self.last = false;
-            } else {
-                self.last = true;
-                self.now = candle.timestamp;
-            }
         }
     }
 }
@@ -212,7 +210,12 @@ fn get_raw_book(snap_id: i32) -> Result<()> {
 }*/
 
 fn get_postgres() -> Connection {
-    Connection::connect("postgres://postgres:S0up3rd7kE50062%24XXXxXx@localhost:5432", TlsMode::None).unwrap()
+    Connection::connect("postgres://postgres:Gr0mpie3@35.199.7.86:5432", TlsMode::None).unwrap()
+}
+
+struct Heartbeat {
+    last: i64,
+    now: i64
 }
 
 fn main() {
@@ -220,6 +223,7 @@ fn main() {
 
     let snap:Arc<Mutex<i32>> = Arc::new(Mutex::new(0));
     let seq: Arc<Mutex<i16>> = Arc::new(Mutex::new(0));
+    let beat: Arc<Mutex<Heartbeat>> = Arc::new(Mutex::new(Heartbeat {last: 0, now:0}));
 
     let snap_ticker = Arc::clone(&snap);
     let seq_ticker = Arc::clone(&seq);
@@ -234,7 +238,7 @@ fn main() {
     let snap_trades = Arc::clone(&snap);
     kids.push(thread::spawn(move|| {
         let mut socket: WebSockets = WebSockets::new();
-        socket.add_event_handler(Trades {connection: get_postgres(), snap: snap_trades});
+        socket.add_event_handler(Trades {connection: get_postgres()});
         socket.connect().unwrap();
         // Trades
         socket.subscribe_trades(BTCUSD, EventType::Trading);
@@ -243,10 +247,10 @@ fn main() {
 
     let snap_candles = Arc::clone(&snap);
     let seq_candles = Arc::clone(&seq);
-    //let book_candles = Arc::clone(&book);
+    let beat_candles = Arc::clone(&beat);
     kids.push(thread::spawn(move|| {
         let mut socket: WebSockets = WebSockets::new();
-        socket.add_event_handler(Candles {connection: get_postgres(), snap: snap_candles, seq: seq_candles, last: true, now: 0});
+        socket.add_event_handler(Candles {connection: get_postgres(), snap: snap_candles, seq: seq_candles, beat: beat_candles});
         socket.connect().unwrap();
         // Candles
         socket.subscribe_candles(BTCUSD, "1m");

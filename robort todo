@@ -1,0 +1,39 @@
+SPRINT 1 -- May 19th - June 9th
+OK		-Finalize full schema
+OK		-Create in postgres, add timescaledb functionality
+OK		-Make all websockets insert to db for basics
+OK		-Make order book snapshot DS&A and implement
+OK		-Make order book v1 10K RAW and implement (every minute)
+OK		-Test run to verify functionality
+OK		-Set up in google cloud -- 	Docker container on Compute Engine connecting to postgres cloud sql instance
+OK		-Run
+
+1.1 -- Cleanup -- June 9th 
+OK		-Remove snap Mutex from trades; it's not working out. 
+
+SPRINT 2
+-Clean everything up and separate into files.
+-Get rid of unnecessary garbage.
+-Optimize the database for memory usage, if possible (data analysis involved)
+-Add tests, both unit and integration.
+-Clean up dockerfile and other infra stuff. CI?
+-Document everything you actually did. Medium?
+OK (pairs) -Decide whether to add another exchange or another pair next.
+-Make a way to do this modularly and extensibly.
+-Deploy with final set of exchanges or pairs.
+
+SPRINT 3 (long sprint)
+-Figure out how to do reinforcement learning
+-Make rough learner that is profitable
+
+SPRINT 4
+-Cleanup learner
+
+SPRINT 5
+-Make rough trading bot
+
+SPRINT 6
+-Cleanup bot
+
+FINAL THINGS
+-DEPLOYYYYYYYY

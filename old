@@ -1,0 +1,43 @@
+
+impl EventHandler for OrderBookP0 {
+    fn on_data_event(&mut self, event:DataEvent) {
+        if let DataEvent::BookTradingUpdateEvent(channel, order) = event
+            {
+                println!("Book Order ({}) - Price: {:?}, Amount: {:?} count: {:?}", channel, order.price, order.amount, order.count);
+            }
+        else if let DataEvent::BookTradingSnapshotEvent(channel, orders) = event {
+            println!("Starting Order Book Snapshot from Channel: {:?}", channel);
+            let mut x = 0;
+            for order in orders {
+                x += 1;
+                println!("{:?}  count: {:?}, Price: {:?}, Amount: {:?}", x, order.count, order.price, order.amount);
+            }
+        }
+    }
+}
+
+impl EventHandler for OrderBookP1 {
+    fn on_data_event(&mut self, event:DataEvent) {
+        if let DataEvent::BookTradingUpdateEvent(channel, order) = event
+            {
+                println!("Book Order ({}) - Price: {:?}, Amount: {:?} count: {:?}", channel, order.price, order.amount, order.count);
+            }
+    }
+}
+
+impl EventHandler for OrderBookP2 {
+    fn on_data_event(&mut self, event:DataEvent) {
+        if let DataEvent::BookTradingUpdateEvent(channel, order) = event
+            {
+                println!("Book Order ({}) - Price: {:?}, Amount: {:?} count: {:?}", channel, order.price, order.amount, order.count);
+            }
+    }
+}
+
+impl EventHandler for OrderBookP3 {
+    fn on_data_event(&mut self, event:DataEvent) {
+        if let DataEvent::BookTradingUpdateEvent(channel, order) = event {
+                println!("Book Order ({}) - Price: {:?}, Amount: {:?} count: {:?}", channel, order.price, order.amount, order.count);
+            }
+    }
+}

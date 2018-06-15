@@ -1,0 +1,200 @@
+CREATE TABLE snaps (
+	snap_id			INTEGER 			NOT NULL,
+	time_begin		TIMESTAMPTZ			NOT NULL,
+	time_end		TIMESTAMPTZ			NOT NULL
+);
+
+ALTER TABLE snaps ADD PRIMARY KEY (snap_id, time_end);
+SELECT create_hypertable('snaps', 'time_end');
+CREATE INDEX ON snaps (snap_id);
+-- last_price and time_end is the same as candle close
+
+CREATE TABLE pairs (
+	id 				SMALLINT	PRIMARY KEY	NOT NULL,
+	name			CHAR(10)	NOT NULL
+);
+
+INSERT INTO pairs (id, name) VALUES (1, 'BTCUSD');
+
+CREATE TABLE exchanges (
+	id 				SMALLINT PRIMARY KEY NOT NULL,
+	name			CHAR(10)	NOT NULL
+);
+
+INSERT INTO exchanges (id, name) VALUES (1, 'Bitfinex');
+
+-- https://api.bitfinex.com/v1/book/btcusd?limit_asks=10000&limit_bids=10000&group=0
+-- TODO remove sequenc column. it is overkill. also maybe time in/out/filled
+-- add boolean column to indicate bid/ask
+CREATE TABLE orders (
+	snap_id			INTEGER				NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair			SMALLINT			NOT NULL,
+	sequence		SMALLINT			NOT NULL,
+
+	price 			DOUBLE PRECISION	NOT NULL,
+	time_in 		TIMESTAMPTZ,
+	time_out 		TIMESTAMPTZ,
+	filled 			BOOLEAN,
+	amount 			DOUBLE PRECISION	NOT NULL
+);
+
+ALTER TABLE orders ADD PRIMARY KEY (timestamp, exchange, pair, price, amount, sequence);
+ALTER TABLE orders ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON orders (snap_id, exchange, pair);
+CREATE INDEX ON orders (snap_id);
+SELECT create_hypertable ('orders', 'timestamp');
+
+CREATE TABLE order_book_raw (
+	snap_id			INTEGER				NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+
+	bid_amounts		DOUBLE PRECISION[5000]  NOT NULL,
+	bid_prices		DOUBLE PRECISION[5000]			NOT NULL,
+	ask_amounts 	DOUBLE PRECISION[5000]  NOT NULL,
+	ask_prices		DOUBLE PRECISION[5000]			NOT NULL
+);
+
+ALTER TABLE order_book_raw ADD PRIMARY KEY (timestamp, exchange, pair, snap_id);
+ALTER TABLE order_book_raw ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON order_book_raw (snap_id, exchange, pair);
+CREATE INDEX ON order_book_raw (snap_id);
+SELECT create_hypertable ('order_book_raw', 'timestamp');
+
+CREATE TABLE order_book_p0 (
+	snap_id 		INTEGER			 	NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair 			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+
+	last_price		DOUBLE PRECISION	NOT NULL,  
+	bid_amounts		DOUBLE PRECISION[100]  NOT NULL,
+	bid_counts		SMALLINT[100]			NOT NULL,
+	ask_amounts 	DOUBLE PRECISION[100]  NOT NULL,
+	ask_counts		SMALLINT[100]			NOT NULL
+);
+
+ALTER TABLE order_book_p0 ADD PRIMARY KEY (snap_id, exchange, pair, timestamp);
+ALTER TABLE order_book_p0 ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON order_book_p0 (snap_id, exchange, pair);
+CREATE INDEX ON order_book_p0 (snap_id);
+SELECT create_hypertable ('order_book_p0', 'timestamp');
+
+CREATE TABLE order_book_p1 (
+	snap_id 		INTEGER			 	NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair 			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+
+	last_price		DOUBLE PRECISION	NOT NULL,  
+	bid_amounts		DOUBLE PRECISION[100]  NOT NULL,
+	bid_counts		SMALLINT[100]			NOT NULL,
+	ask_amounts 	DOUBLE PRECISION[100]  NOT NULL,
+	ask_counts		SMALLINT[100]			NOT NULL
+);
+
+ALTER TABLE order_book_p1 ADD PRIMARY KEY (snap_id, exchange, pair, timestamp);
+ALTER TABLE order_book_p1 ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON order_book_p1 (snap_id, exchange, pair);
+CREATE INDEX ON order_book_p1 (snap_id);
+SELECT create_hypertable ('order_book_p1', 'timestamp');
+
+CREATE TABLE order_book_p2 (
+	snap_id 		INTEGER			 	NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair 			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+
+	last_price		DOUBLE PRECISION	NOT NULL,  
+	bid_amounts		DOUBLE PRECISION[100]  NOT NULL,
+	bid_counts		SMALLINT[100]			NOT NULL,
+	ask_amounts 	DOUBLE PRECISION[100]  NOT NULL,
+	ask_counts		SMALLINT[100]			NOT NULL
+);
+
+ALTER TABLE order_book_p2 ADD PRIMARY KEY (snap_id, exchange, pair, timestamp);
+ALTER TABLE order_book_p2 ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON order_book_p2 (snap_id, exchange, pair);
+CREATE INDEX ON order_book_p2 (snap_id);
+SELECT create_hypertable ('order_book_p2', 'timestamp');
+
+CREATE TABLE order_book_p3 (
+	snap_id 		INTEGER			 	NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair 			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+
+	last_price		DOUBLE PRECISION	NOT NULL,  
+	bid_amounts		DOUBLE PRECISION[100]  NOT NULL,
+	bid_counts		SMALLINT[100]			NOT NULL,
+	ask_amounts 	DOUBLE PRECISION[100]  NOT NULL,
+	ask_counts		SMALLINT[100]			NOT NULL
+);
+
+ALTER TABLE order_book_p3 ADD PRIMARY KEY (snap_id, exchange, pair, timestamp);
+ALTER TABLE order_book_p3 ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON order_book_p3 (snap_id, exchange, pair);
+CREATE INDEX ON order_book_p3 (snap_id);
+SELECT create_hypertable ('order_book_p3', 'timestamp');
+
+CREATE TABLE ticker (
+	exchange		SMALLINT			NOT NULL,
+	pair 			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+
+	bid 			DOUBLE PRECISION	NOT NULL,
+	bid_size		DOUBLE PRECISION	NOT NULL,
+	ask 			DOUBLE PRECISION	NOT NULL,
+	ask_size 		DOUBLE PRECISION	NOT NULL,
+	daily_change 	DOUBLE PRECISION	NOT NULL,
+	daily_change_perc DOUBLE PRECISION	NOT NULL,
+	last_price		DOUBLE PRECISION	NOT NULL,
+	volume			DOUBLE PRECISION	NOT NULL,
+	high			DOUBLE PRECISION	NOT NULL,
+	low				DOUBLE PRECISION	NOT NULL
+);
+
+ALTER TABLE ticker ADD PRIMARY KEY (exchange, pair, timestamp);
+SELECT create_hypertable ('ticker', 'timestamp');
+
+-- is_sell is 0 for buy, 1 for sell
+CREATE TABLE trades (
+	snap_id 		INTEGER				NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair 			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+	trade_id		INTEGER				NOT NULL,
+
+	amount 		DOUBLE PRECISION	NOT NULL,
+	price 		DOUBLE PRECISION	NOT NULL,
+	is_sell		BOOLEAN				NOT NULL
+);
+
+ALTER TABLE trades ADD PRIMARY KEY (snap_id, exchange, pair, timestamp);
+ALTER TABLE trades ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON trades (snap_id, exchange, pair);
+CREATE INDEX ON trades (snap_id);
+SELECT create_hypertable ('trades', 'timestamp');
+
+CREATE TABLE candles (
+	snap_id 		INTEGER			 	NOT NULL,
+	exchange		SMALLINT			NOT NULL,
+	pair 			SMALLINT			NOT NULL,
+	timestamp 		TIMESTAMPTZ			NOT NULL,
+
+	open		DOUBLE PRECISION	NOT NULL,
+	close		DOUBLE PRECISION	NOT NULL,
+	high		DOUBLE PRECISION	NOT NULL,
+	low			DOUBLE PRECISION	NOT NULL,
+	volume		DOUBLE PRECISION	NOT NULL
+);
+
+ALTER TABLE candles ADD PRIMARY KEY (trade_id, timestamp);
+ALTER TABLE candles ADD FOREIGN KEY (snap_id) REFERENCES snaps (snap_id);
+CREATE INDEX ON candles (snap_id, exchange, pair);
+CREATE INDEX ON candles (snap_id);
+SELECT create_hypertable ('candles', 'timestamp');
+
