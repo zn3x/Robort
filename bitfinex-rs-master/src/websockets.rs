@@ -200,6 +200,7 @@ impl WebSockets {
                                 } else {
                                     h.on_data_event(event);
                                 }
+
                             }
                         }
                     }

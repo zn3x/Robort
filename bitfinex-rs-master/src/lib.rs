@@ -1,4 +1,5 @@
-#[macro_use] 
+#![feature(type_ascription)]
+#[macro_use]
 extern crate error_chain;
 
 extern crate hex;
@@ -9,7 +10,7 @@ extern crate serde;
 extern crate serde_json;
 extern crate tungstenite;
 extern crate url;
-
+extern crate postgres;
 #[macro_use] 
 extern crate serde_derive;
 
@@ -23,7 +24,6 @@ mod candles;
 mod account;
 
 pub mod api;
-pub mod pairs;
 pub mod currency;
 pub mod precision;
 pub mod websockets;

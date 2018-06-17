@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bitfinex-rs-master.iml" filepath="$PROJECT_DIR$/.idea/bitfinex-rs-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitfinex-rs-master.iml" filepath="$PROJECT_DIR$/bitfinex-rs-master.iml" />
     </modules>
   </component>
 </project>

@@ -14,7 +14,7 @@ OK		-Remove snap Mutex from trades; it's not working out.
 SPRINT 2
 -Clean everything up and separate into files.
 -Get rid of unnecessary garbage.
--Optimize the database for memory usage, if possible (data analysis involved)
+OK UNNECESSARY -Optimize the database for memory usage, if possible (data analysis involved)
 -Add tests, both unit and integration.
 -Clean up dockerfile and other infra stuff. CI?
 -Document everything you actually did. Medium?

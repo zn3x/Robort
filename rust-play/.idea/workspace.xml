@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="655de892-0e01-491a-9be0-ffbb635e17dc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/binance.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bitfinex.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bitfinexfull.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/orderbook.rs" afterDir="false" />
-    </list>
+    <list default="true" id="655de892-0e01-491a-9be0-ffbb635e17dc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,49 +16,53 @@
       <file leaf-file-name="play.rs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/play.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
+            <state relative-caret-position="1395">
               <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bitfinex.rs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bitfinex.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2930">
-              <caret line="211" column="33" lean-forward="true" selection-start-line="211" selection-start-column="33" selection-end-line="211" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arc.rs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/liballoc/arc.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2985">
-              <caret line="199" column="11" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lib.rs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.17/src/lib.rs">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/lib.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="orderbook.rs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/orderbook.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="47" />
+            <state relative-caret-position="290">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/example.csv">
+      <file leaf-file-name="subscribe.rs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/subscribe.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="290">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.rs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="websockets.rs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/websockets.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
             </state>
           </provider>
         </entry>
@@ -72,17 +70,8 @@
       <file leaf-file-name="Cargo.toml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cargo.toml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.rs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/libcore/result.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11580">
-              <caret line="778" selection-start-line="778" selection-end-line="778" />
+            <state relative-caret-position="377">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -98,24 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>F</find>
-      <find>subscribe_books</find>
-      <find>password</find>
-      <find>Price:</find>
-      <find>count: 0</find>
-      <find>Amount: 0</find>
-      <find>12616200941</find>
-      <find>Pric</find>
-      <find>EventHandler</find>
-      <find>S</find>
-      <find>7250.3</find>
-      <find>7260.5</find>
-      <find>7269.8</find>
-      <find>1527558960000</find>
-      <find>14.17278087</find>
-      <find>xxx</find>
-      <find>&amp;self.snap</find>
-      <find>1527967980000</find>
       <find>1527972300000</find>
       <find>1527972600000</find>
       <find>bool</find>
@@ -127,41 +98,61 @@
       <find>get_unix_timestamp_ms</find>
       <find>cmp::min</find>
       <find>postgres</find>
+      <find>str</find>
+      <find>BTCUSD</find>
+      <find>pair</find>
+      <find>get_utc_from_ms</find>
+      <find>thread</find>
+      <find>chrono</find>
+      <find>reqwest</find>
+      <find>serde_json</find>
+      <find>get_post</find>
+      <find>to_string</find>
+      <find>get_postgres</find>
+      <find>ETHUSD</find>
+      <find>Book</find>
+      <find>ETCUSD</find>
+      <find>LTCUSD</find>
+      <find>5000</find>
+      <find>println</find>
       <find>now()</find>
+      <find>Error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/timescaledb.rs" />
-        <option value="$PROJECT_DIR$/../bitfinex-rs-master/src/websockets.rs" />
-        <option value="$PROJECT_DIR$/src/main.rs" />
         <option value="$PROJECT_DIR$/src/binance.rs" />
         <option value="$PROJECT_DIR$/src/pairs.rs" />
         <option value="$PROJECT_DIR$/src/bitfinexfull.rs" />
-        <option value="$PROJECT_DIR$/src/lib.rs" />
-        <option value="$PROJECT_DIR$/src/orderbook.rs" />
-        <option value="$PROJECT_DIR$/Cargo.toml" />
+        <option value="$PROJECT_DIR$/../bitfinex-rs-master/Cargo.toml" />
+        <option value="$PROJECT_DIR$/../bitfinex-rs-master/src/pairs.rs" />
         <option value="$PROJECT_DIR$/src/bitfinex.rs" />
+        <option value="$PROJECT_DIR$/src/orderbook.rs" />
+        <option value="$PROJECT_DIR$/../bitfinex-rs-master/src/lib.rs" />
+        <option value="$PROJECT_DIR$/Cargo.toml" />
+        <option value="$PROJECT_DIR$/src/lib.rs" />
+        <option value="$PROJECT_DIR$/../bitfinex-rs-master/src/websockets.rs" />
+        <option value="$PROJECT_DIR$/src/main.rs" />
+        <option value="$PROJECT_DIR$/src/subscribe.rs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="79" />
-    <option name="y" value="24" />
-    <option name="width" value="1044" />
-    <option name="height" value="1056" />
+    <option name="x" value="134" />
+    <option name="y" value="39" />
+    <option name="width" value="2710" />
+    <option name="height" value="2121" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,32 +165,19 @@
               <item name="rust-play" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="rust-play" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rust-play" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rust-play" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rust-play" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rust-play" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rust-play" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bitfinex-rs-master" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="org.rust.cargo.project.configurable.RustProjectConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -308,6 +286,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="655de892-0e01-491a-9be0-ffbb635e17dc" name="Default" comment="" />
@@ -319,103 +300,42 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="24" width="1044" height="1056" extended-state="4" />
+    <frame x="134" y="39" width="2710" height="2121" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Cargo" order="6" />
+      <window_info anchor="right" id="Cargo" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5034213" side_tool="true" weight="0.32911393" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4965787" visible="true" weight="0.314346" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4965787" visible="true" weight="0.41565308" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.100946374" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16568266" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="Cargo" order="6" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.100946374" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4965787" visible="true" weight="0.46624473" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5034213" side_tool="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/play.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orderbook.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/websockets.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/postgres-0.15.2/src/lib.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14430">
-          <caret line="962" column="21" selection-start-line="962" selection-start-column="21" selection-end-line="962" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/example.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cargo.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bitfinex.rs">
+    <entry file="file://$PROJECT_DIR$/src/subscribe.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
@@ -524,46 +444,16 @@
     <entry file="file://$PROJECT_DIR$/Cargo.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/debug/example.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/debug/example.csv" />
     <entry file="file://$PROJECT_DIR$/Cargo.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rust-play.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/bitfinex-0.2.0/src/events.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/bitfinex-0.2.0/src/book.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/bitfinex-0.2.0/src/websockets.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/errors.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/bitfinex-0.2.0/src/events.rs" />
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/bitfinex-0.2.0/src/book.rs" />
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/bitfinex-0.2.0/src/websockets.rs" />
     <entry file="file://$PROJECT_DIR$/src/binance.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -571,21 +461,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/postgres-0.15.2/src/lib.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14370">
-          <caret line="962" column="21" selection-start-line="962" selection-start-column="21" selection-end-line="962" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/postgres-0.15.2/src/lib.rs" />
     <entry file="file://$PROJECT_DIR$/src/pairs.rs" />
-    <entry file="file://$PROJECT_DIR$/src/play.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bitfinexfull.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -593,62 +470,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/websockets.rs">
+    <entry file="file://$PROJECT_DIR$/src/resources/example.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="154" column="11" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
+        <state relative-caret-position="29">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/example.csv">
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.17/src/lib.rs" />
+    <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/liballoc/arc.rs" />
+    <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/libcore/result.rs" />
+    <entry file="file://$PROJECT_DIR$/rust-play.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="406">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/pairs.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/Cargo.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/play.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/lib.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="261">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.17/src/lib.rs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/liballoc/arc.rs">
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.8/src/capture.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2985">
-          <caret line="199" column="11" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
+        <state relative-caret-position="251">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/libcore/result.rs">
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.11.0/src/lib.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11580">
-          <caret line="778" selection-start-line="778" selection-end-line="778" />
+        <state relative-caret-position="338">
+          <caret line="615" selection-start-line="615" selection-end-line="615" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/errors.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/orderbook.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="290">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bitfinex-rs-master/src/websockets.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cargo.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="377">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bitfinex.rs">
+    <entry file="file://$PROJECT_DIR$/src/subscribe.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2930">
-          <caret line="211" column="33" lean-forward="true" selection-start-line="211" selection-start-column="33" selection-end-line="211" selection-end-column="33" />
+        <state relative-caret-position="290">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>

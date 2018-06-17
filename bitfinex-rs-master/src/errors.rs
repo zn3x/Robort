@@ -3,6 +3,7 @@ use reqwest;
 use url;
 use serde_json;
 use tungstenite;
+use postgres;
 
 error_chain! {
     types {
@@ -24,6 +25,7 @@ error_chain! {
         Json(serde_json::Error);
         Tungstenite(tungstenite::Error);
         TimestampError(std::time::SystemTimeError);
+        DBError(postgres::Error);
     }
 
 }

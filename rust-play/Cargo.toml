@@ -5,21 +5,21 @@ authors = ["LinkageCriterion <self@meredithagens.com>"]
 
 [dependencies]
 csv = "1"
-reqwest = "0.8.5"
+reqwest = "0.8.6"
 tempdir = "0.3.7"
 postgres = {version="0.15.2", features=["with-chrono"]}
 bitfinex = "0.2.0"
-binance = "0.2.3"
-chrono = "0.4.2"
-serde_json = "1.0"
-serde = "1.0"
-serde_derive = "1.0"
-postgres_array = "0.9"
+chrono = "0.4.3"
+serde_json = "1.0.21"
+serde = "1.0.66"
+serde_derive = "1.0.66"
+postgres_array = "0.9.0"
+r2d2 = "0.8.2"
+r2d2_postgres = "0.14.0"
 
 [replace]
 "bitfinex:0.2.0" = {path="../bitfinex-rs-master"}
-"binance:0.2.3" = {path="../binance-rs-master"}
 
 [[bin]]
-name = "bitfinex"
-path = "src/bitfinex.rs"
+name = "main"
+path = "src/main.rs"
