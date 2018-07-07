@@ -1,20 +1,25 @@
 
 
-use postgres::{Connection, TlsMode, Error};
+use postgres::{Connection, TlsMode};
 use std::sync::{Arc, Mutex};
-use bitfinex::{ errors::*, events::*, websockets::* };
+use std::io;
+use bitfinex::{ events::*, websockets::* , errors::*};
 use std::{thread, cmp};
+use std::thread::{spawn, sleep};
 use std::io::Read;
 use chrono::{DateTime, NaiveDateTime, Utc};
 use reqwest::get;
 use serde_json::{from_str};
 use r2d2::{Pool, PooledConnection};
 use r2d2_postgres::PostgresConnectionManager;
+use std::time::{Duration};
+extern crate rand;
+use self::rand as r;
 
 #[derive(Clone)]
-struct Pair {
-    uid: i16,
-    name: String
+pub struct Pair {
+    pub uid: i16,
+    pub name: String
 }
 
 struct Ticker {postgres: Pool<PostgresConnectionManager>, snap: Arc<Mutex<i32>>, seq: Arc<Mutex<i16>>, pair: i16, exchange: i16}
@@ -30,14 +35,35 @@ impl EventHandler for Ticker {
             let (snap, seq) = (*snaplock, *seqlock);
             drop(snaplock);
             drop(seqlock);
-            self.postgres.get().unwrap().execute("INSERT INTO ticker \
+            let result = match get_conn(&self.postgres, 1) {
+                Ok(conn) => {
+                    conn.execute("INSERT INTO ticker \
                 (snap_id, exchange, pair, timestamp, sequence, \
                  bid, bid_size, ask, ask_size, daily_change, \
                  daily_change_perc, last_price, volume, high, low) VALUES \
                  ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)",
-                 &[&snap, &self.exchange, &self.pair, &Utc::now(), &&seq,
-                 &tick.bid, &tick.bid_size, &tick.ask, &tick.ask_size, &tick.daily_change,
-                 &tick.daily_change_perc, &tick.last_price, &tick.volume, &tick.high, &tick.low]).unwrap();
+                                 &[&snap, &self.exchange, &self.pair, &Utc::now(), &&seq,
+                                     &tick.bid, &tick.bid_size, &tick.ask, &tick.ask_size, &tick.daily_change,
+                                     &tick.daily_change_perc, &tick.last_price, &tick.volume, &tick.high, &tick.low]).unwrap();
+                },
+                Err(err) => return
+            };
+
+        }
+    }
+}
+
+fn get_conn(pg:&Pool<PostgresConnectionManager>, t:i16) ->  Result<PooledConnection<PostgresConnectionManager>> {
+    match pg.get() {
+        Ok(connection) => {
+            Ok(connection)
+        },
+        Err(err) => {
+            if(t>5) {
+                return  Err(Error::with_chain(err, "Maximum connection attempts exceeded."));
+            }
+            println!("{}", "Connection failed, retry... ");
+            get_conn(pg, t+1)
         }
     }
 }
@@ -50,10 +76,10 @@ impl EventHandler for Trades {
                 let is_sell: bool = trade.amount < 0.0;
                 self.postgres.get().unwrap().execute("INSERT INTO trades \
                 (snap_id, exchange, pair, timestamp, trade_id, \
-                 amount, price, is_sell) VALUES \
-                 ($1, $2, $3, $4, $5, $6, $7, $8)",
+                 amount, price, is_sell, inserted) VALUES \
+                 ($1, $2, $3, $4, $5, $6, $7, $8, $9)",
                  &[&(1 as i32), &self.exchange, &self.pair, &get_utc_from_ms(trade.mts), &(trade.id as i32),
-                &trade.amount, &trade.price, &is_sell]).unwrap();
+                &trade.amount, &trade.price, &is_sell, &Utc::now()]).unwrap();
             }
         }
     }
@@ -112,15 +138,15 @@ impl EventHandler for Candles {
                     let conn = self.postgres.get().unwrap();
                     conn.execute("INSERT INTO candles \
                 (snap_id, exchange, pair, timestamp, \
-                 open, close, high, low, volume) VALUES \
-                 ($1, $2, $3, $4, $5, $6, $7, $8, $9)",
+                 open, close, high, low, volume, inserted) VALUES \
+                 ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)",
                  &[&snap, &self.exchange, &self.pair.uid, &get_utc_from_ms(candle.timestamp),
-                  &candle.open, &candle.close, &candle.high, &candle.low, &candle.volume]).unwrap();
+                  &candle.open, &candle.close, &candle.high, &candle.low, &candle.volume, &Utc::now()]).unwrap();
                     //Insert into snaps table
                     if self.pair.uid == 1 {
                         conn.execute("INSERT INTO snaps \
-                (snap_id, time_begin, time_end) VALUES ($1, $2, $3)",
-                                     &[&(snap - 1), &get_utc_from_ms(candle.timestamp), &get_utc_from_ms(candle.timestamp + 60000)]).unwrap();
+                (snap_id, time_begin, time_end, inserted) VALUES ($1, $2, $3, $4)",
+                                     &[&(snap - 1), &get_utc_from_ms(candle.timestamp), &get_utc_from_ms(candle.timestamp + 60000), &Utc::now()]).unwrap();
                     }
                         for kid in kids {
                         let _ = kid.join();
@@ -191,18 +217,30 @@ impl EventHandler for Candles {
         let (bids, asks) = (book.bids.len(), book.asks.len());
         println!("{} bids {}, asks {}, {}", pair, bids, asks, Utc::now());
         for n in 0..bids {
-            bid_amounts[n] = book.bids[n].amount.parse::<f64>().unwrap();
-            bid_prices[n] = book.bids[n].price.parse::<f64>().unwrap();
+            bid_amounts[n] = match book.bids[n].amount.parse::<f64>() {
+                Ok(val) => val,
+                Err(val) => 0.0
+            };
+            bid_prices[n] = match book.bids[n].price.parse::<f64>() {
+                Ok(val) => val,
+                Err(val) => 0.0
+            };
         }
         for n in 0..asks {
-            ask_amounts[n] = book.asks[n].amount.parse::<f64>().unwrap();
-            ask_prices[n] = book.asks[n].price.parse::<f64>().unwrap();
+            ask_amounts[n] = match book.asks[n].amount.parse::<f64>() {
+                Ok(val) => val,
+                Err(va) => 0.0
+            };
+            ask_prices[n] = match book.asks[n].price.parse::<f64>(){
+                Ok(val) => val,
+                Err(va) => 0.0
+            };
         }
 
         conn.execute("INSERT INTO order_book_raw (snap_id, exchange, pair, timestamp, \
-     bid_amounts, bid_prices, ask_amounts, ask_prices) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)",
+     bid_amounts, bid_prices, ask_amounts, ask_prices, inserted) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)",
                      &[&snap_id, &(1 as i16), &u, &get_utc_from_s(time.parse::<f64>().unwrap() as i64),
-                         &bid_amounts, &bid_prices, &ask_amounts, &ask_prices]).unwrap();
+                         &bid_amounts, &bid_prices, &ask_amounts, &ask_prices, &Utc::now()]).unwrap();
         Ok(())
     }
 
@@ -242,7 +280,6 @@ struct Heartbeat {
 pub fn start(exchange: i16, name: String, uid: i16, postgres: Pool<PostgresConnectionManager>) {
     let mut kids = vec![];
 
-    let spare_name = name.clone();
     let pair: Pair = Pair { uid, name };
 
     let snap:Arc<Mutex<i32>> = Arc::new(Mutex::new(0));
@@ -254,24 +291,51 @@ pub fn start(exchange: i16, name: String, uid: i16, postgres: Pool<PostgresConne
     let pair_ticker = pair.clone();
     let postgres_ticker = postgres.clone();
     kids.push(thread::spawn(move|| {
-        let mut socket: WebSockets = WebSockets::new();
-        socket.add_event_handler(Ticker {postgres: postgres_ticker, snap: snap_ticker, seq: seq_ticker, pair: pair_ticker.uid, exchange});
-        socket.connect().unwrap();
-        // Ticker
-        socket.subscribe_ticker(pair_ticker.name, EventType::Trading);
-        socket.event_loop().unwrap();
+        loop {
+            let mut pair_tick = pair_ticker.clone();
+            let mut socket: WebSockets = WebSockets::new();
+            socket.add_event_handler(Ticker {postgres: postgres_ticker.clone(), snap: Arc::clone(&snap_ticker), seq: Arc::clone(&seq_ticker), pair: pair_tick.uid, exchange});
+            socket.connect().unwrap();
+            // Ticker
+            socket.subscribe_ticker(pair_tick.name, EventType::Trading);
+            match socket.event_loop() {
+                Ok(any) => {
+                    println!("{:?} : {:?}", "Ticker websocket success exit, retrying...", any);
+                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    continue
+                },
+                Err(any) => {
+                    println!("{:?} : {:?}", "Ticker websocket failure exit, retrying...", any);
+                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    continue
+                }
+            }
+        }
     }));
 
-    //let snap_trades = Arc::clone(&snap);
     let pair_trades = pair.clone();
     let postgres_trades = postgres.clone();
     kids.push(thread::spawn(move|| {
-        let mut socket: WebSockets = WebSockets::new();
-        socket.add_event_handler(Trades {postgres: postgres_trades, pair: pair_trades.uid, exchange});
-        socket.connect().unwrap();
-        // Trades
-        socket.subscribe_trades(pair_trades.name, EventType::Trading);
-        socket.event_loop().unwrap();
+        loop {
+            let mut pair_trades = pair_trades.clone();
+            let mut socket: WebSockets = WebSockets::new();
+        socket.add_event_handler(Trades {postgres: postgres_trades.clone(), pair: pair_trades.uid, exchange});
+            socket.connect().unwrap();
+            // Trades
+            socket.subscribe_trades(pair_trades.name, EventType::Trading);
+            match socket.event_loop() {
+                Ok(any) => {
+                    println!("{:?} : {:?}", "Trades websocket success exit, retrying...", any);
+                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    continue
+                },
+                Err(any) => {
+                    println!("{:?} : {:?}", "Trades websocket failure exit, retrying...", any);
+                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    continue
+                }
+            }
+        }
     }));
 
     let snap_candles = Arc::clone(&snap);
@@ -280,13 +344,26 @@ pub fn start(exchange: i16, name: String, uid: i16, postgres: Pool<PostgresConne
 
     let postgres_candles = postgres.clone();
     kids.push(thread::spawn(move|| {
-        let mut socket: WebSockets = WebSockets::new();
-        socket.add_event_handler(Candles {postgres: postgres_candles, snap: snap_candles, seq: seq_candles, beat: beat_candles, pair, exchange});
-        socket.connect().unwrap();
-        // Candles
-        socket.subscribe_candles(spare_name, "1m".to_string());
-        socket.event_loop().unwrap();
-    }));
+        loop {
+            let pair_candles = pair.clone();
+            let mut socket: WebSockets = WebSockets::new();
+            socket.add_event_handler(Candles {postgres: postgres_candles.clone(), snap: Arc::clone(&snap_candles), seq: Arc::clone(&seq_candles), beat: Arc::clone(&beat_candles), pair: pair_candles.clone(), exchange});
+            socket.connect().unwrap();
+            // Candles
+            socket.subscribe_candles(pair_candles.name, "1m".to_string());
+            match socket.event_loop() {
+            Ok(any) => {
+            println!("{:?} : {:?}", "Candles websocket success exit, retrying...", any);
+                sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                continue
+            },
+            Err(any) => {
+            println!("{:?} : {:?}", "Candles websocket failure exit, retrying...", any);
+                sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                continue
+            }
+        }
+    }}));
 
     for kid in kids {
         let _ = kid.join();

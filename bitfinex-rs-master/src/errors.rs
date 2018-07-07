@@ -4,6 +4,7 @@ use url;
 use serde_json;
 use tungstenite;
 use postgres;
+use r2d2;
 
 error_chain! {
     types {
@@ -26,6 +27,7 @@ error_chain! {
         Tungstenite(tungstenite::Error);
         TimestampError(std::time::SystemTimeError);
         DBError(postgres::Error);
+        PoolError(r2d2::Error);
     }
 
 }

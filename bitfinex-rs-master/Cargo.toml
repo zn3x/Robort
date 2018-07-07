@@ -30,3 +30,5 @@ url = "1.6"
 log = "0.3"
 tungstenite = "0.5.3"
 postgres = {version="0.15.2", features=["with-chrono"]}
+r2d2 = "0.8.2"
+

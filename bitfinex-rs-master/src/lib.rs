@@ -1,4 +1,3 @@
-#![feature(type_ascription)]
 #[macro_use]
 extern crate error_chain;
 
@@ -11,7 +10,8 @@ extern crate serde_json;
 extern crate tungstenite;
 extern crate url;
 extern crate postgres;
-#[macro_use] 
+extern crate r2d2;
+#[macro_use]
 extern crate serde_derive;
 
 mod book;

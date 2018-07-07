@@ -8,6 +8,7 @@ extern crate serde_derive;
 extern crate serde_json;
 extern crate r2d2;
 extern crate r2d2_postgres;
+extern crate rand;
 
 use std::thread::{spawn, sleep};
 use std::time::{Duration};
@@ -26,16 +27,17 @@ fn main() {
         let mut name : String   = row.get(1);
         name = name.trim().to_string();
         let uid : i16 = row.get(0);
+        if uid > 15 {
+            continue;
+        }
         println!("'{}'", name);
         let pool = pool.clone();
         kids.push(spawn(move|| {
             subscribe::start(1, name, uid, pool);
         }));
-        //sleep(Duration::from_millis(2000));
+        sleep(Duration::from_millis(40000));
         count += 1;
-        if count == 20 {
-            break;
-        }
+
     }
 
     for kid in kids {

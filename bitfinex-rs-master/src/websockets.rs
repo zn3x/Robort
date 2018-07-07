@@ -170,7 +170,7 @@ impl WebSockets {
                         Err(mpsc::TryRecvError::Disconnected) => {
                             bail!("Disconnected")
                         }
-                        Err(mpsc::TryRecvError::Empty) => break,
+                        Err(mpsc::TryRecvError::Empty) => break
                     }
                 }
 
