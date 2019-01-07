@@ -24,3 +24,10 @@ R0 = 0.004958456, 0.003849922
 
 binance: 
 0.005374
+
+deployment process:
+gcloud auth configure-docker
+docker build . -t name
+docker tag name gcr.io/arcane-text-157022/caturday
+docker push gcr.io/arcane-text-157022/caturday
+35.196.238.17

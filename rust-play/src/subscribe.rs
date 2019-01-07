@@ -301,12 +301,12 @@ pub fn start(exchange: i16, name: String, uid: i16, postgres: Pool<PostgresConne
             match socket.event_loop() {
                 Ok(any) => {
                     println!("{:?} : {:?}", "Ticker websocket success exit, retrying...", any);
-                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    sleep(Duration::from_millis(65000));
                     continue
                 },
                 Err(any) => {
                     println!("{:?} : {:?}", "Ticker websocket failure exit, retrying...", any);
-                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    sleep(Duration::from_millis(65000));
                     continue
                 }
             }
@@ -320,18 +320,18 @@ pub fn start(exchange: i16, name: String, uid: i16, postgres: Pool<PostgresConne
             let mut pair_trades = pair_trades.clone();
             let mut socket: WebSockets = WebSockets::new();
         socket.add_event_handler(Trades {postgres: postgres_trades.clone(), pair: pair_trades.uid, exchange});
-            socket.connect().unwrap();
+            socket.connect().unwrap();  //TODO cannot unwrap here without error handling, idiot!!!
             // Trades
             socket.subscribe_trades(pair_trades.name, EventType::Trading);
             match socket.event_loop() {
                 Ok(any) => {
                     println!("{:?} : {:?}", "Trades websocket success exit, retrying...", any);
-                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    sleep(Duration::from_millis(65000));
                     continue
                 },
                 Err(any) => {
                     println!("{:?} : {:?}", "Trades websocket failure exit, retrying...", any);
-                    sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                    sleep(Duration::from_millis(65000));
                     continue
                 }
             }
@@ -354,12 +354,12 @@ pub fn start(exchange: i16, name: String, uid: i16, postgres: Pool<PostgresConne
             match socket.event_loop() {
             Ok(any) => {
             println!("{:?} : {:?}", "Candles websocket success exit, retrying...", any);
-                sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                sleep(Duration::from_millis(65000));
                 continue
             },
             Err(any) => {
             println!("{:?} : {:?}", "Candles websocket failure exit, retrying...", any);
-                sleep(Duration::from_millis(120000*rand::random::<u64>() as u64));
+                sleep(Duration::from_millis(65000));
                 continue
             }
         }

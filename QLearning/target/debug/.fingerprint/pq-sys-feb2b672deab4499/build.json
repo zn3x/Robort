@@ -1,0 +1,1 @@
+{"rustc":0,"features":"","target":0,"profile":0,"path":0,"deps":[],"local":[{"EnvBased":["PQ_LIB_DIR",null]},{"EnvBased":["PQ_LIB_STATIC",null]},{"EnvBased":["TARGET",null]},{"EnvBased":["PQ_LIB_STATIC_X86_64_UNKNOWN_LINUX_GNU",null]}],"rustflags":[],"edition":"Edition2015"}

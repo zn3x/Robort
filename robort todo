@@ -24,7 +24,11 @@ OK (pairs) -Decide whether to add another exchange or another pair next.
 
 SPRINT 3 (long sprint)
 -Figure out how to do reinforcement learning
+-create rust openai gym of simple case (one pair at first) that works w/python
+-dick around with using A3C python example; get it to work.
+-add other pairs to the gym env; make configurable; etc.
 -Make rough learner that is profitable
+-eliminate usage of python
 
 SPRINT 4
 -Cleanup learner

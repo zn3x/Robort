@@ -18,7 +18,7 @@ mod subscribe;
 
 fn main() {
     let mut kids = vec![];
-    let manager = PostgresConnectionManager::new("postgres://postgres:Gr0mpie3@35.199.7.86:5432", TlsMode::None).unwrap();
+    let manager = PostgresConnectionManager::new("postgres://merf:Gr0mpie3@0.0.0.0:5432", TlsMode::None).unwrap();
     let pool = r2d2::Pool::builder().max_size(25).build(manager).unwrap();
     let conn = subscribe::get_postgres();
     let mut count = 0;
@@ -27,7 +27,7 @@ fn main() {
         let mut name : String   = row.get(1);
         name = name.trim().to_string();
         let uid : i16 = row.get(0);
-        if uid > 15 {
+        if uid > 5 {
             continue;
         }
         println!("'{}'", name);
@@ -35,7 +35,7 @@ fn main() {
         kids.push(spawn(move|| {
             subscribe::start(1, name, uid, pool);
         }));
-        sleep(Duration::from_millis(40000));
+        //sleep(Duration::from_millis(40000));
         count += 1;
 
     }

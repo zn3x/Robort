@@ -14,82 +14,6 @@ CREATE TABLE pairs (
 	name			CHAR(10)	NOT NULL
 );
 
-trades candles and rawbook need "now" column with timestamp of entry.
-('1', 'BTCUSD'),
-('2', 'EOSUSD'),
-('3', 'ETHUSD'),
-('4', 'BCHUSD'),
-('5', 'LTCUSD'),
-('6', 'MIOTAUSD'),
-('7', 'ETCUSD'),
-('8', 'XRPUSD'),
-('9', 'EOSBTC'),
-('10', 'ETHBTC'),
-('11', 'BTCEUR'),
-('12', 'NEOUSD'),
-('13', 'MIOTABTC'),
-('14', 'ETHEUR'),
-('15', 'BCHBTC'),
-('16', 'ETCBTC'),
-('17', 'EOSETH'),
-('18', 'XMRUSD'),
-('19', 'BTCGBP'),
-('20', 'XRPBTC'),)
-
-('1', 'BTCUSD'),
-('2', 'LTCUSD'),
-('3', 'LTCBTC'),
-('4', 'ETHUSD'),
-('5', 'ETHBTC'),
-('6', 'ETCBTC'),
-('7', 'ETCUSD'),
-('8', 'ZECUSD'),
-('9', 'ZECBTC'),
-('10', 'XMRUSD'),
-('11', 'XMRBTC'),
-('12', 'BTCEUR'),
-('13', 'BTCJPY'),
-('14', 'XRPUSD'),
-('15', 'XRPBTC'),
-('16', 'EOSUSD'),
-('17', 'EOSBTC'),
-('18', 'EOSETH'),
-('19', 'BCHUSD'),
-('20', 'BCHBTC'),
-('21', 'BCHETH'),
-('22', 'NEOUSD'),
-('23', 'NEOBTC'),
-('24', 'NEOETH'),
-('25', 'ETPUSD'),
-('26', 'ETPBTC'),
-('27', 'ETPETH'),
-('28', 'BTGUSD'),
-('29', 'BTGBTC'),
-('30', 'BTCGBP'),
-('31', 'ETHEUR'),
-('32', 'ETHJPY'),
-('33', 'ETHGBP'),
-('34', 'NEOEUR'),
-('35', 'NEOJPY'),
-('36', 'NEOGBP'),
-('37', 'EOSEUR'),
-('38', 'EOSJPY'),
-('39', 'EOSGBP'),
-('40', 'XLMUSD'),
-('41', 'XLMEUR'),
-('42', 'XLMJPY'),
-('43', 'XLMGBP'),
-('44', 'XLMBTC'),
-('45', 'XLMETH'),
-('46', 'XVGUSD'),
-('47', 'XVGEUR'),
-('48', 'XVGJPY'),
-('49', 'XVGGBP'),
-('50', 'XVGBTC'),
-('51', 'XVGETH'),
-('52', 'BCIUSD'),
-('53', 'BCIBTC')
-
 INSERT INTO pairs (id, name) VALUES (1, 'BTCUSD');
 
 CREATE TABLE exchanges (
@@ -142,7 +66,8 @@ SELECT create_hypertable ('order_book_raw', 'timestamp');
 
 CREATE TABLE order_book_p0 (
 	snap_id 		INTEGER			 	NOT NULL,
-	exchange		SMALLINT			NOT NULL,
+	exchange		SMALLINT			
+	NOT NULL,
 	pair 			SMALLINT			NOT NULL,
 	timestamp 		TIMESTAMPTZ			NOT NULL,
 
@@ -182,8 +107,7 @@ CREATE TABLE order_book_p2 (
 	snap_id 		INTEGER			 	NOT NULL,
 	exchange		SMALLINT			NOT NULL,
 	pair 			SMALLINT			NOT NULL,
-	timestamp 		TIMESTAMPTZ			NOT NULL,
-
+	timestamp 		TIMESTAMPTZ			NOT NULL 
 	last_price		DOUBLE PRECISION	NOT NULL,  
 	bid_amounts		DOUBLE PRECISION[100]  NOT NULL,
 	bid_counts		SMALLINT[100]			NOT NULL,
