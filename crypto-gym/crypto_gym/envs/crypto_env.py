@@ -4,6 +4,9 @@ from gym.utils import seeding
 from .frame_manager import FrameManager
 from math import inf
 import numpy as np
+import matplotlib.pyplot as plt
+from random import randint
+
 
 #to start, only EOSUSD, BTCUSD, ETHUSD.
 class CryptoEnv(gym.Env):
@@ -26,6 +29,9 @@ class CryptoEnv(gym.Env):
                 row bid_amounts, row bid_counts, row ask_amounts, row ask_counts (4) 
         """
         self.action_space = spaces.Box(low=-1, high=1, shape=(3,))
+        self.frames = FrameManager(framerate=5, pair_limit=3)
+        self.current_frames = self.frames.next_frames(np.array([500, 0, 0, 0]))
+        self.holdings_history = np.array(self.current_holdings())
 
     def step(self, trades):
         #returns observation_array, reward, if game is over (mostly False), and "info" ({})
@@ -40,65 +46,68 @@ class CryptoEnv(gym.Env):
             """
         trades = self.scale_trades_by_currency(trades)
         self.order_books = self.frames.get_current_raw_book()
-        self.holdings = self.current_holdings()
-        initial_money = self.calculate_portfolio_value(self.holdings[0], self.holdings[1:])
-        self.make_trades(self.holdings, trades) #self.holdings altered to new holdings
+        holdings = self.current_holdings()
+        #print(holdings)
+        initial_money = self.calculate_portfolio_value(holdings)
+        holdings = self.make_trades(holdings, trades)  #self.holdings altered to new holdings
         self.order_books = self.frames.get_next_raw_book()
-        new_money = self.calculate_portfolio_value(self.holdings[0], self.holdings[1:])
-        self.current_frames = np.dstack([self.current_frames[:, :, 0:4], self.frames.get_next_frame(self.holdings)])
+        new_money = self.calculate_portfolio_value(holdings)
+        self.current_frames = np.dstack([self.current_frames[:, :, 0:4], self.frames.get_next_frame(holdings)])
+        #print(holdings)
         #print(self.current_frames.shape, " dstacked: ", np.dstack(self.current_frames).shape, " vstacked: ", np.vstack(self.current_frames).shape, " hstacked: ", np.hstack(self.current_frames).shape)
 
-        np.vstack((self.holdings_history, self.holdings))
+        self.holdings_history = np.dstack((self.holdings_history, holdings))
 
         return np.hstack(np.vstack(self.current_frames)), new_money-initial_money, False, {}
 
     def make_trades(self, holdings, trades):
-        for pair in range(0, len(trades)):
-            if trades[pair] < 0 and holdings[pair+1] > 0: #sell crypto side / buy usd side
-                delta, bid_index = abs(trades[pair] * holdings[pair+1]), 0
+        for pair in range(len(trades)):
+            if trades[pair] < 0 and holdings[pair+1] > 0:  # sell crypto side / buy usd side
+                delta, bid_index = abs(max(-1, trades[pair]) * holdings[pair+1]), 0
                 usd = 0
                 while delta > 0:
                     d = min(delta, self.order_books[pair][0][bid_index])
                     delta -= d
                     usd += d * self.order_books[pair][1][bid_index]
                     bid_index += 1
+                    holdings[pair+1] -= d
                     if bid_index == 5000 and delta > 0:
                         print("Err! Not enough order volume to buy USD")
                         break
                 holdings[0] += usd * 0.998
-                holdings[pair+1] -= delta
-            if trades[pair] > 0 and holdings[pair+1] <= 0: # buy crypto side / sell usd side
-                delta, ask_index = trades[pair] * holdings[0], 0
+            if trades[pair] > 0 and holdings[0] > 0:  # buy crypto side / sell usd side
+                delta, ask_index = min(1, trades[pair]) * holdings[0], 0
                 crypto = 0
                 while delta > 0:
                     d = min(delta, self.order_books[pair][2][ask_index])
                     delta -= d
                     crypto += d * self.order_books[pair][3][ask_index]
                     ask_index += 1
+                    holdings[0] -= d
                     if ask_index == 5000 and delta > 0:
                         print("Err! Not enough order volume to buy crypto")
                         break
-                    holdings[pair+1] += crypto * 0.998
-                    holdings[0] -= delta
+                holdings[pair+1] += crypto * 0.998
+        return holdings
 
 
-    def calculate_portfolio_value(self, USD, holdings):
-        usd = USD
-        for pair in range(0, len(holdings)):
+    def calculate_portfolio_value(self, holdings):
+        usd = holdings[0]
+        #print(holdings)
+        for pair in range(1, len(holdings)):
             held, bid_index = holdings[pair], 0
-            while held > 0 :
-                delta = min(held, self.order_books[pair][0][bid_index])
+            while held > 0:
+                delta = min(held, self.order_books[pair-1][0][bid_index])
                 held -= delta
-                usd += delta * self.order_books[pair][1][bid_index]
+                usd += delta * self.order_books[pair-1][1][bid_index]
                 bid_index += 1
                 if bid_index == 5000 and held > 0:
-                    print("Err! Not enough order volume to convert to USD")
+                    print("Err! Not enough order volume to convert to USD for held ", held, " and pair ", pair)
                     break
         return usd
 
     def current_holdings(self):
-        return self.current_frames[0][0][0:4]
-
+        return self.current_frames[0, 0:4, 0]
 
     def reset(self):
         #return first observation array.
@@ -111,11 +120,11 @@ class CryptoEnv(gym.Env):
 
     def render(self, mode='human', close=False):
         #this is for making visualizations. maybe a plot of profits?
-        for i in range(len(self.holdings_history)):
-            plt.plot(self.holdings_history[i, :]) # plot rewards
+        for i in range(len(self.holdings_history[0])):
+            plt.plot(self.holdings_history[:, i])  # plot rewards
         plt.xlabel('step')
         plt.ylabel('holdings')
-        plt.show()
+        plt.savefig(str(randint(0, 100))+'.png')
     """ will we need this??? 
     @property
     def action_space(self):

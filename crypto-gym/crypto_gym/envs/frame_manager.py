@@ -10,7 +10,7 @@ class FrameManager():
         self.framerate = framerate
         self.pair_limit = pair_limit
         Base = automap_base()
-        engine = create_engine("postgres://postgres:Gr0mpie3@35.199.7.86:5432")
+        engine = create_engine("postgres://postgres:Gr0mpie3@localhost")
         # reflect the tables
         Base.prepare(engine, reflect=True)
         # mapped classes are now created with names by default
@@ -21,8 +21,8 @@ class FrameManager():
         self.Snaps = Base.classes.snaps
         self.session = Session(engine)
 
-        for pair in self.session.query(Base.classes.pairs):
-            print(pair.id, pair.name)
+        #for pair in self.session.query(Base.classes.pairs):
+        #    print(pair.id, pair.name)
 
         self.get_current_raw_book()
         self.get_next_raw_book()
@@ -53,7 +53,7 @@ class FrameManager():
                     except:
                         self.frame += 1
                         return self.get_next_frame(holdings)
-        if self.frame%20 == 0:
+        if self.frame%200 == 0:
             print("next frame: ", frame.shape, begin, self.frame)
         self.frame += 1
         if frame.shape != (49, 100):

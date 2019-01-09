@@ -13,8 +13,8 @@ OUTPUT_GRAPH = True         # safe logs
 RENDER=True                 # render one worker
 LOG_DIR = './log'           # savelocation for logs
 N_WORKERS = multiprocessing.cpu_count() # number of workers
-MAX_EP_STEP = 1000           # maxumum number of steps per episode
-MAX_GLOBAL_EP = 100        # total number of episodes
+MAX_EP_STEP = 600           # maxumum number of steps per episode
+MAX_GLOBAL_EP = 20        # total number of episodes
 GLOBAL_NET_SCOPE = 'Global_Net'
 UPDATE_GLOBAL_ITER = 10     # sets how often the global net is updated
 GAMMA = 0.90                # discount factor
@@ -104,6 +104,7 @@ class ACNet(object):
         s = s[np.newaxis, :]
         return self.sess.run(self.A, {self.s: s})[0]
 
+
 # worker class that inits own environment, trains on it and updloads weights to global net
 class Worker(object):
     def __init__(self, name, globalAC, sess):
@@ -120,8 +121,8 @@ class Worker(object):
             s = self.env.reset()
             ep_r = 0
             for ep_t in range(MAX_EP_STEP):
-                if self.name == 'W_0' and RENDER:
-                    self.env.render()
+                #if self.name == 'W_0' and RENDER:
+                #    self.env.render()
                 a = self.AC.choose_action(s)         # estimate stochastic action based on policy 
                 s_, r, done, info = self.env.step(a) # make step in environment
                 done = True if ep_t == MAX_EP_STEP - 1 else False
@@ -168,6 +169,8 @@ class Worker(object):
                           )
                     global_episodes += 1
                     break
+            self.env.render()
+
 
 if __name__ == "__main__":
     global_rewards = []

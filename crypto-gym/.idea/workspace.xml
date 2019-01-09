@@ -2,285 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10380b26-74db-4c2f-aa9b-f089824c9965" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../A3C-Continuous" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/Pipfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/QLearning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/diesel.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/migrations/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/migrations/00000000000000_diesel_initial_setup/down.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/migrations/00000000000000_diesel_initial_setup/up.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/src/A3C.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/.rustc_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.cargo-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/QLearning-c026f083338c910f/bin-QLearning-c026f083338c910f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/QLearning-c026f083338c910f/bin-QLearning-c026f083338c910f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/QLearning-c026f083338c910f/dep-bin-QLearning-c026f083338c910f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/aho-corasick-75a135e61bd04409/dep-lib-aho_corasick-75a135e61bd04409" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/aho-corasick-75a135e61bd04409/lib-aho_corasick-75a135e61bd04409" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/aho-corasick-75a135e61bd04409/lib-aho_corasick-75a135e61bd04409.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/bitflags-988c0ffbc6bc80fb/dep-lib-bitflags-988c0ffbc6bc80fb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/bitflags-988c0ffbc6bc80fb/lib-bitflags-988c0ffbc6bc80fb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/bitflags-988c0ffbc6bc80fb/lib-bitflags-988c0ffbc6bc80fb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/byteorder-8f19e8d2beaa4830/dep-lib-byteorder-8f19e8d2beaa4830" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/byteorder-8f19e8d2beaa4830/lib-byteorder-8f19e8d2beaa4830" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/byteorder-8f19e8d2beaa4830/lib-byteorder-8f19e8d2beaa4830.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/diesel-a2d54826667b33f8/dep-lib-diesel-a2d54826667b33f8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/diesel-a2d54826667b33f8/lib-diesel-a2d54826667b33f8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/diesel-a2d54826667b33f8/lib-diesel-a2d54826667b33f8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/diesel_derives-b4c5ab69f64b2787/dep-lib-diesel_derives-b4c5ab69f64b2787" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/diesel_derives-b4c5ab69f64b2787/lib-diesel_derives-b4c5ab69f64b2787" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/diesel_derives-b4c5ab69f64b2787/lib-diesel_derives-b4c5ab69f64b2787.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/dotenv-61a343c54cce2ca0/dep-lib-dotenv-61a343c54cce2ca0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/dotenv-61a343c54cce2ca0/lib-dotenv-61a343c54cce2ca0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/dotenv-61a343c54cce2ca0/lib-dotenv-61a343c54cce2ca0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/lazy_static-7020affe805e94ff/dep-lib-lazy_static-7020affe805e94ff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/lazy_static-7020affe805e94ff/lib-lazy_static-7020affe805e94ff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/lazy_static-7020affe805e94ff/lib-lazy_static-7020affe805e94ff.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/libc-2cd7ded52a56119c/dep-lib-libc-2cd7ded52a56119c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/libc-2cd7ded52a56119c/lib-libc-2cd7ded52a56119c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/libc-2cd7ded52a56119c/lib-libc-2cd7ded52a56119c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/memchr-572731367f83c64c/dep-lib-memchr-572731367f83c64c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/memchr-572731367f83c64c/lib-memchr-572731367f83c64c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/memchr-572731367f83c64c/lib-memchr-572731367f83c64c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-30ef9ef493a664f4/build-script-build_script_build-30ef9ef493a664f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-30ef9ef493a664f4/build-script-build_script_build-30ef9ef493a664f4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-30ef9ef493a664f4/dep-build-script-build_script_build-30ef9ef493a664f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-fb0755e4070d0d82/dep-lib-pq_sys-fb0755e4070d0d82" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-fb0755e4070d0d82/lib-pq_sys-fb0755e4070d0d82" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-fb0755e4070d0d82/lib-pq_sys-fb0755e4070d0d82.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-feb2b672deab4499/build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/pq-sys-feb2b672deab4499/build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/proc-macro2-bdd7f17042dc8ac8/dep-lib-proc_macro2-bdd7f17042dc8ac8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/proc-macro2-bdd7f17042dc8ac8/lib-proc_macro2-bdd7f17042dc8ac8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/proc-macro2-bdd7f17042dc8ac8/lib-proc_macro2-bdd7f17042dc8ac8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/quote-5b6ca7f238ed0dbc/dep-lib-quote-5b6ca7f238ed0dbc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/quote-5b6ca7f238ed0dbc/lib-quote-5b6ca7f238ed0dbc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/quote-5b6ca7f238ed0dbc/lib-quote-5b6ca7f238ed0dbc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-13b614e500f6ea37/dep-lib-rand-13b614e500f6ea37" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-13b614e500f6ea37/lib-rand-13b614e500f6ea37" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-13b614e500f6ea37/lib-rand-13b614e500f6ea37.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-16d6e2ef59893a66/dep-lib-rand-16d6e2ef59893a66" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-16d6e2ef59893a66/lib-rand-16d6e2ef59893a66" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-16d6e2ef59893a66/lib-rand-16d6e2ef59893a66.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-432b0e4840240aa1/dep-lib-rand-432b0e4840240aa1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-432b0e4840240aa1/lib-rand-432b0e4840240aa1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand-432b0e4840240aa1/lib-rand-432b0e4840240aa1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand_core-3dcb05dd26ce5cfe/dep-lib-rand_core-3dcb05dd26ce5cfe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand_core-3dcb05dd26ce5cfe/lib-rand_core-3dcb05dd26ce5cfe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rand_core-3dcb05dd26ce5cfe/lib-rand_core-3dcb05dd26ce5cfe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-144252e381e2e509/dep-lib-regex-144252e381e2e509" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-144252e381e2e509/lib-regex-144252e381e2e509" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-144252e381e2e509/lib-regex-144252e381e2e509.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-7a177684955ea941/build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-7a177684955ea941/build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-7a9dd94b834aaafa/build-script-build_script_build-7a9dd94b834aaafa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-7a9dd94b834aaafa/build-script-build_script_build-7a9dd94b834aaafa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-7a9dd94b834aaafa/dep-build-script-build_script_build-7a9dd94b834aaafa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-syntax-4eaefcd5c065207b/dep-lib-regex_syntax-4eaefcd5c065207b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-syntax-4eaefcd5c065207b/lib-regex_syntax-4eaefcd5c065207b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/regex-syntax-4eaefcd5c065207b/lib-regex_syntax-4eaefcd5c065207b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rurel-102c7999fd7971a2/dep-lib-rurel-102c7999fd7971a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rurel-102c7999fd7971a2/lib-rurel-102c7999fd7971a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/rurel-102c7999fd7971a2/lib-rurel-102c7999fd7971a2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/syn-73d7c744ec3fdc7c/dep-lib-syn-73d7c744ec3fdc7c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/syn-73d7c744ec3fdc7c/lib-syn-73d7c744ec3fdc7c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/syn-73d7c744ec3fdc7c/lib-syn-73d7c744ec3fdc7c.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/thread_local-f4e8df308a5d1e6d/dep-lib-thread_local-f4e8df308a5d1e6d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/thread_local-f4e8df308a5d1e6d/lib-thread_local-f4e8df308a5d1e6d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/thread_local-f4e8df308a5d1e6d/lib-thread_local-f4e8df308a5d1e6d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/ucd-util-e9570ff43206e1bb/dep-lib-ucd_util-e9570ff43206e1bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/ucd-util-e9570ff43206e1bb/lib-ucd_util-e9570ff43206e1bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/ucd-util-e9570ff43206e1bb/lib-ucd_util-e9570ff43206e1bb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/unicode-xid-9281d1808c098226/dep-lib-unicode_xid-9281d1808c098226" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/unicode-xid-9281d1808c098226/lib-unicode_xid-9281d1808c098226" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/unicode-xid-9281d1808c098226/lib-unicode_xid-9281d1808c098226.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/unreachable-3ee31832ed1e3def/dep-lib-unreachable-3ee31832ed1e3def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/unreachable-3ee31832ed1e3def/lib-unreachable-3ee31832ed1e3def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/unreachable-3ee31832ed1e3def/lib-unreachable-3ee31832ed1e3def.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/utf8-ranges-40d8696d073ee6b7/dep-lib-utf8_ranges-40d8696d073ee6b7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/utf8-ranges-40d8696d073ee6b7/lib-utf8_ranges-40d8696d073ee6b7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/utf8-ranges-40d8696d073ee6b7/lib-utf8_ranges-40d8696d073ee6b7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/void-79b9c75b7a9d5784/dep-lib-void-79b9c75b7a9d5784" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/void-79b9c75b7a9d5784/lib-void-79b9c75b7a9d5784" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/.fingerprint/void-79b9c75b7a9d5784/lib-void-79b9c75b7a9d5784.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/QLearning" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/QLearning.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/pq-sys-30ef9ef493a664f4/build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/pq-sys-30ef9ef493a664f4/build_script_build-30ef9ef493a664f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/pq-sys-30ef9ef493a664f4/build_script_build-30ef9ef493a664f4.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/pq-sys-feb2b672deab4499/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/pq-sys-feb2b672deab4499/root-output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/pq-sys-feb2b672deab4499/stderr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/regex-7a177684955ea941/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/regex-7a177684955ea941/root-output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/regex-7a177684955ea941/stderr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/regex-7a9dd94b834aaafa/build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/regex-7a9dd94b834aaafa/build_script_build-7a9dd94b834aaafa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/build/regex-7a9dd94b834aaafa/build_script_build-7a9dd94b834aaafa.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/QLearning-c026f083338c910f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/QLearning-c026f083338c910f.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/aho_corasick-75a135e61bd04409.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/bitflags-988c0ffbc6bc80fb.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/byteorder-8f19e8d2beaa4830.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/diesel-a2d54826667b33f8.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/diesel_derives-b4c5ab69f64b2787.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/dotenv-61a343c54cce2ca0.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/lazy_static-7020affe805e94ff.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libaho_corasick-75a135e61bd04409.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libbitflags-988c0ffbc6bc80fb.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libbyteorder-8f19e8d2beaa4830.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libc-2cd7ded52a56119c.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libdiesel-a2d54826667b33f8.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libdiesel_derives-b4c5ab69f64b2787.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libdotenv-61a343c54cce2ca0.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/liblazy_static-7020affe805e94ff.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/liblibc-2cd7ded52a56119c.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libmemchr-572731367f83c64c.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libpq_sys-fb0755e4070d0d82.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libproc_macro2-bdd7f17042dc8ac8.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libquote-5b6ca7f238ed0dbc.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/librand-13b614e500f6ea37.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/librand-16d6e2ef59893a66.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/librand-432b0e4840240aa1.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/librand_core-3dcb05dd26ce5cfe.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libregex-144252e381e2e509.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libregex_syntax-4eaefcd5c065207b.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/librurel-102c7999fd7971a2.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libsyn-73d7c744ec3fdc7c.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libthread_local-f4e8df308a5d1e6d.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libucd_util-e9570ff43206e1bb.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libunicode_xid-9281d1808c098226.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libunreachable-3ee31832ed1e3def.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libutf8_ranges-40d8696d073ee6b7.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/libvoid-79b9c75b7a9d5784.rlib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/memchr-572731367f83c64c.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/pq_sys-fb0755e4070d0d82.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/proc_macro2-bdd7f17042dc8ac8.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/quote-5b6ca7f238ed0dbc.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/rand-13b614e500f6ea37.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/rand-16d6e2ef59893a66.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/rand-432b0e4840240aa1.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/rand_core-3dcb05dd26ce5cfe.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/regex-144252e381e2e509.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/regex_syntax-4eaefcd5c065207b.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/rurel-102c7999fd7971a2.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/syn-73d7c744ec3fdc7c.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/thread_local-f4e8df308a5d1e6d.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/ucd_util-e9570ff43206e1bb.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/unicode_xid-9281d1808c098226.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/unreachable-3ee31832ed1e3def.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/utf8_ranges-40d8696d073ee6b7.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/deps/void-79b9c75b7a9d5784.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/16u6js6g0l3k1ic6.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/181cuta0v63atwcm.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/1dqvxks6k2bzkxe.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/1e698527iprj2v8f.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/1im38lueib99jsk0.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/1mvmz58owquyropc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/1q8ffos2d96smbjs.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/1rmm85xvb873qftb.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/1y16o1qfye96o7m0.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/27xmsibx9gi84w3i.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/2jjn5msgrhwtcdwn.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/2jqywn86b2gsqohu.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/2lyh15q6cjwzy18c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/2q5257pdh5222n7q.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/2w6xsa2hbi53xhak.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/2wixplf1qzszxq14.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/2xnvmuhjbhd7vxcm.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/38ps4pa181wsnsy9.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/3ayaeypdcro9d6yk.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/3g94tobrpgum5dk6.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/3rngp6bm2u2q5z0y.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/3u3ltdh51rc0msf1.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/3wta9ctgdrpkmlpr.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/436dotimmrgzkwfa.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/45hi7filx09ztmw6.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/45pc7c65foh9i35f.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/48721dc4k5qxei0u.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/49a7n47po4ttqjl7.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/49lx1q7cxvpykyv0.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4brwxiorhmgsb6oc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4dldyq15f0t8b2zd.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4g47d2sx6m33abop.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4jgu2s5rpeaixn86.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4nzfeb3auvt9daoj.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4oc10dk278mpk1vy.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4xq48u46a1pwiqn7.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4xuhwz5yy6q4gvgg.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4yh8x2b62dcih00t.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/4ypvbwho0bu5tnww.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/56dly8q07ws8ucdq.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/5beqqbexwb143v6a.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/8xzrsc1ux72v29j.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/9elsx31vb4it187.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/dep-graph.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/e19kx9t7xhzajfl.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/kclyx7of0fal6jf.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/oa3rad818d8sgn4.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/query-cache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/work-products.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/y08g5q2x813c4wx.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90-3vgbr9luxzr7/z9ox7biyn1otfln.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/target/debug/incremental/QLearning-192xygcjpdmey/s-f2vpco13fz-cpiq90.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/bin/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/bin/activate.csh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/bin/activate.fish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/bin/python" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/bin/python3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/bin/python3.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/lib64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QLearning/venv/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a3c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypto-gym.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypto_gym/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypto_gym/envs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypto_gym/envs/crypto_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypto_gym/envs/crypto_extrahard_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crypto_gym/envs/frame_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/Pipfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/crypto-gym.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/crypto_gym/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/crypto_gym/envs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/crypto_gym/envs/crypto_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/crypto_gym/envs/crypto_extrahard_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/crypto_gym/envs/frame_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/crypto-gym/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pairs.txtx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Robort" beforeDir="false" afterPath="$PROJECT_DIR$/../Robort" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postgres_schema" beforeDir="false" afterPath="$PROJECT_DIR$/../postgres_schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../robort todo" beforeDir="false" afterPath="$PROJECT_DIR$/../robort todo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/src/subscribe.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/src/subscribe.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A3C-Continuous" beforeDir="false" afterPath="$PROJECT_DIR$/../A3C-Continuous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a3c.py" beforeDir="false" afterPath="$PROJECT_DIR$/a3c.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_gym/envs/crypto_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_gym/envs/crypto_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_gym/envs/frame_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_gym/envs/frame_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/events.out.tfevents.1539083299.Khrushchev" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -296,14 +23,15 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crypto_gym/envs/crypto_env.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="114" column="64" lean-forward="true" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
+            <state relative-caret-position="624">
+              <caret line="109" column="45" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
               <folding>
-                <marker date="1546796582775" expanded="true" signature="2943:4353" ph="..." />
-                <marker date="1546796582775" expanded="true" signature="4950:5935" ph="..." />
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1547001604923" expanded="true" signature="3223:4660" ph="..." />
+                <marker date="1547001604923" expanded="true" signature="5324:6342" ph="..." />
               </folding>
             </state>
           </provider>
@@ -312,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.local/share/virtualenvs/crypto-gym-027s4dLZ/lib/python3.6/site-packages/tensorflow/python/client/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31465">
+            <state relative-caret-position="30798">
               <caret line="1085" selection-start-line="1085" selection-end-line="1085" />
             </state>
           </provider>
@@ -321,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.local/share/virtualenvs/crypto-gym-027s4dLZ/lib/python3.6/site-packages/tensorflow/python/framework/ops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51243">
+            <state relative-caret-position="49909">
               <caret line="1767" selection-start-line="1767" selection-end-line="1767" />
             </state>
           </provider>
@@ -336,18 +64,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crypto_gym/envs/frame_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="-1446">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
-                <marker date="1539051057628" expanded="true" signature="161:6508" ph="..." />
-                <marker date="1539051057628" expanded="true" signature="305:306" ph="..." />
-                <marker date="1539051057628" expanded="true" signature="1219:1225" ph="..." />
-                <marker date="1539051057628" expanded="true" signature="1260:1269" ph="..." />
-                <marker date="1539051057628" expanded="true" signature="3141:3150" ph="..." />
+                <marker date="1546830962421" expanded="true" signature="161:6504" ph="..." />
+                <marker date="1546830962421" expanded="true" signature="305:306" ph="..." />
+                <marker date="1546830962421" expanded="true" signature="1214:1220" ph="..." />
+                <marker date="1546830962421" expanded="true" signature="1255:1264" ph="..." />
+                <marker date="1546830962421" expanded="true" signature="3137:3146" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.local/share/virtualenvs/crypto-gym-027s4dLZ/lib/python3.6/site-packages/gym/envs/registration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -355,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crypto_gym/envs/crypto_extrahard_env.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="348">
               <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
             </state>
           </provider>
@@ -373,17 +110,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a3c.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1058">
-              <caret line="198" column="32" lean-forward="true" selection-start-line="198" selection-start-column="32" selection-end-line="198" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/events.out.tfevents.1539083299.Khrushchev">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="455">
+              <caret line="162" column="51" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -401,16 +132,13 @@
     <findStrings>
       <find>get_current_raw_book</find>
       <find>next_frame</find>
-      <find>env</find>
       <find>self.frame</find>
       <find>w_</find>
       <find>raw_book</find>
       <find>..</find>
-      <find>next frame</find>
       <find>.length</find>
       <find>W_</find>
       <find>newaxis</find>
-      <find>print(</find>
       <find>523</find>
       <find>10</find>
       <find>print</find>
@@ -420,6 +148,18 @@
       <find>ep_r</find>
       <find>crypto</find>
       <find>plt</find>
+      <find>next frame:</find>
+      <find>MAX_GLOBAL_EP</find>
+      <find>_frame</find>
+      <find>holdings_history</find>
+      <find>env</find>
+      <find>next fram</find>
+      <find>holdings</find>
+      <find>current_frames</find>
+      <find>current_holdings</find>
+      <find>print(</find>
+      <find>pair_limit</find>
+      <find>next frame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -436,17 +176,17 @@
         <option value="$PROJECT_DIR$/crypto_gym/envs/__init__.py" />
         <option value="$PROJECT_DIR$/../A3C-Continuous/a3c.py" />
         <option value="$PROJECT_DIR$/Pipfile" />
-        <option value="$PROJECT_DIR$/crypto_gym/envs/frame_manager.py" />
         <option value="$PROJECT_DIR$/a3c.py" />
+        <option value="$PROJECT_DIR$/crypto_gym/envs/frame_manager.py" />
         <option value="$PROJECT_DIR$/crypto_gym/envs/crypto_env.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="134" />
-    <option name="y" value="35" />
-    <option name="width" value="3706" />
-    <option name="height" value="2125" />
+    <option name="y" value="213" />
+    <option name="width" value="3696" />
+    <option name="height" value="1594" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -507,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.a3c">
     <configuration name="a3c" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="crypto-gym" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -550,6 +290,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.a3c" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -565,10 +310,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="35" width="3706" height="2125" extended-state="7" />
+    <frame x="134" y="35" width="3706" height="2125" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21448314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2169707" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -577,13 +322,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74012804" visible="true" weight="0.3487395" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.73880595" visible="true" weight="0.40075308" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994472" weight="0.39967725" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32983193" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.25987193" side_tool="true" visible="true" weight="0.34911242" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.26119402" side_tool="true" visible="true" weight="0.40075308" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -597,6 +342,22 @@
       <window_info anchor="right" id="Cargo" order="8" />
       <window_info anchor="right" id="Maven" order="9" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/crypto_gym/envs/crypto_env.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/crypto_gym/envs/frame_manager.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
@@ -641,14 +402,14 @@
     </entry>
     <entry file="file://$USER_HOME$/.local/share/virtualenvs/crypto-gym-027s4dLZ/lib/python3.6/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31465">
+        <state relative-caret-position="30798">
           <caret line="1085" selection-start-line="1085" selection-end-line="1085" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/share/virtualenvs/crypto-gym-027s4dLZ/lib/python3.6/site-packages/tensorflow/python/framework/ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51243">
+        <state relative-caret-position="49909">
           <caret line="1767" selection-start-line="1767" selection-end-line="1767" />
         </state>
       </provider>
@@ -662,7 +423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crypto_gym/envs/crypto_extrahard_env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="348">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
@@ -681,34 +442,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto_gym/envs/crypto_env.py">
+    <entry file="file://$PROJECT_DIR$/log/events.out.tfevents.1546823695.Khrushchev">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="114" column="64" lean-forward="true" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
-          <folding>
-            <marker date="1546796582775" expanded="true" signature="2943:4353" ph="..." />
-            <marker date="1546796582775" expanded="true" signature="4950:5935" ph="..." />
-          </folding>
+        <state relative-caret-position="812">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/crypto-gym-027s4dLZ/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/a3c.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="198" column="32" lean-forward="true" selection-start-line="198" selection-start-column="32" selection-end-line="198" selection-end-column="32" />
+        <state relative-caret-position="455">
+          <caret line="162" column="51" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/crypto-gym-027s4dLZ/lib/python3.6/site-packages/gym/envs/registration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crypto_gym/envs/frame_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="-1446">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
-            <marker date="1539051057628" expanded="true" signature="161:6508" ph="..." />
-            <marker date="1539051057628" expanded="true" signature="305:306" ph="..." />
-            <marker date="1539051057628" expanded="true" signature="1219:1225" ph="..." />
-            <marker date="1539051057628" expanded="true" signature="1260:1269" ph="..." />
-            <marker date="1539051057628" expanded="true" signature="3141:3150" ph="..." />
+            <marker date="1546830962421" expanded="true" signature="161:6504" ph="..." />
+            <marker date="1546830962421" expanded="true" signature="305:306" ph="..." />
+            <marker date="1546830962421" expanded="true" signature="1214:1220" ph="..." />
+            <marker date="1546830962421" expanded="true" signature="1255:1264" ph="..." />
+            <marker date="1546830962421" expanded="true" signature="3137:3146" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_gym/envs/crypto_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="109" column="45" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1547001604923" expanded="true" signature="3223:4660" ph="..." />
+            <marker date="1547001604923" expanded="true" signature="5324:6342" ph="..." />
           </folding>
         </state>
       </provider>
