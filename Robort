@@ -1,6 +1,6 @@
 Docker setup for Timescaledb:
 https://docs.timescale.com/v0.9/getting-started/installation/linux/installation-docker
-
+   
 postgres setup: IFNORE THIS
 >sudo passwd postgres
 R0bor7#dykeC0mmun3$$$ also fuck

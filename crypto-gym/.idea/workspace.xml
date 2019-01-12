@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10380b26-74db-4c2f-aa9b-f089824c9965" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../A3C-Continuous" beforeDir="false" afterPath="$PROJECT_DIR$/../A3C-Continuous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a3c.py" beforeDir="false" afterPath="$PROJECT_DIR$/a3c.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto_gym/envs/crypto_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_gym/envs/crypto_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto_gym/envs/frame_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_gym/envs/frame_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/events.out.tfevents.1539083299.Khrushchev" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
