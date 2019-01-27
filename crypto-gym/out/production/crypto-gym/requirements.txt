@@ -1,0 +1,7 @@
+gym = "*"
+sqlalchemy = "*"
+"psycopg2-binary" = "*"
+matplotlib = "*"
+tensorflow = "*"
+pandas = "*"
+mpi4py = "*"

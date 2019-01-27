@@ -7,6 +7,10 @@ name = "pypi"
 gym = "*"
 sqlalchemy = "*"
 "psycopg2-binary" = "*"
+matplotlib = "*"
+tensorflow = "*"
+pandas = "*"
+
 
 [dev-packages]
 

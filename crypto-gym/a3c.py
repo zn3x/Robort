@@ -12,15 +12,15 @@ import crypto_gym.envs
 OUTPUT_GRAPH = True         # safe logs
 RENDER=True                 # render one worker
 LOG_DIR = './log'           # savelocation for logs
-N_WORKERS = multiprocessing.cpu_count() # number of workers
-MAX_EP_STEP = 600           # maxumum number of steps per episode
-MAX_GLOBAL_EP = 20        # total number of episodes
+N_WORKERS =  multiprocessing.cpu_count()*2  # number of workers
+MAX_EP_STEP = 9700           # maxumum number of steps per episode
+MAX_GLOBAL_EP = 1500        # total number of episodes
 GLOBAL_NET_SCOPE = 'Global_Net'
 UPDATE_GLOBAL_ITER = 10     # sets how often the global net is updated
 GAMMA = 0.90                # discount factor
 ENTROPY_BETA = 0.01         # entropy factor
-LR_A = 0.0001               # learning rate for actor
-LR_C = 0.001                # learning rate for critic
+LR_A = 0.001               # learning rate for actor
+LR_C = 0.0001                # learning rate for critic
 
 # set environment
 GAME = 'crypto-v0'
@@ -125,13 +125,13 @@ class Worker(object):
                 #    self.env.render()
                 a = self.AC.choose_action(s)         # estimate stochastic action based on policy 
                 s_, r, done, info = self.env.step(a) # make step in environment
-                done = True if ep_t == MAX_EP_STEP - 1 else False
+                done = True if ep_t == MAX_EP_STEP - 1 else done
 
                 ep_r += r
                 # save actions, states and rewards in buffer
                 buffer_s.append(s)          
                 buffer_a.append(a)
-                buffer_r.append((r+8)/8)    # normalize reward
+                buffer_r.append(r)    # normalize reward
 
                 if total_step % UPDATE_GLOBAL_ITER == 0 or done:   # update global and assign to local net
                     if done:
@@ -201,10 +201,10 @@ if __name__ == "__main__":
         t.start()
         worker_threads.append(t)
     coord.join(worker_threads)  # wait for termination of workers
-    
+    fig = plt.figure()
     plt.plot(np.arange(len(global_rewards)), global_rewards) # plot rewards
     plt.xlabel('step')
     plt.ylabel('total moving reward')
-    plt.show()
+    fig.savefig('rewards.png')
 
     env.render()
