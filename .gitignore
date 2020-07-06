@@ -1,2 +1,5 @@
 *.sql
-
+*.idea
+*.png
+*.scratch
+*.iml

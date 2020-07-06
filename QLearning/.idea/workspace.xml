@@ -2,82 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a34340c-a6b8-491b-b5a4-f42ea9cdbd98" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/A3C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Robort" beforeDir="false" afterPath="$PROJECT_DIR$/../Robort" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postgres_schema" beforeDir="false" afterPath="$PROJECT_DIR$/../postgres_schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../robort todo" beforeDir="false" afterPath="$PROJECT_DIR$/../robort todo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust-play/src/subscribe.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../rust-play/src/subscribe.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A3C-Continuous" beforeDir="false" afterPath="$PROJECT_DIR$/../A3C-Continuous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QLearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/22_9700_52.png" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/22_9700_52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/22_9700_66.png" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/22_9700_66.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/2_9700_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/2_9700_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/READMEbaselines.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/READMEbaselines.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/a2c.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/a2c.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/policies.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/policies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/run_atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/run_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/a2c/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acer/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acer/acer_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acer/acer_simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acer/buffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acer/buffer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acer/policies.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acer/policies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acer/run_atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acer/run_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/acktr_cont.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/acktr_cont.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/acktr_disc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/acktr_disc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/kfac.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/kfac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/kfac_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/kfac_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/policies.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/policies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/run_atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/run_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/run_mujoco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/running_stat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/running_stat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/value_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/acktr/value_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/bench/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/bench/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/bench/benchmarks.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/bench/benchmarks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/bench/monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/bench/monitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/atari_wrappers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/atari_wrappers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/atari_wrappers_deprecated.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/atari_wrappers_deprecated.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/azure_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/azure_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/cg.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/cg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/console_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/console_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/distributions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/distributions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/math_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/math_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/misc_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/misc_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_fork.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_fork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_moments.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_moments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_running_mean_std.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/mpi_running_mean_std.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/running_mean_std.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/running_mean_std.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/schedules.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/schedules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/segment_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/segment_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/tests/test_schedules.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/tests/test_schedules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/tests/test_segment_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/tests/test_segment_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/tests/test_tf_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/tests/test_tf_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/tf_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/tf_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/dummy_vec_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/dummy_vec_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/subproc_vec_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/subproc_vec_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/vec_frame_stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/vec_frame_stack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/vec_normalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/common/vec_env/vec_normalize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/ddpg.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/ddpg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/noise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ddpg/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/build_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/build_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/download_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/download_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/enjoy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/enjoy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/wang2015_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/atari/wang2015_eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/custom_cartpole.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/custom_cartpole.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/enjoy_cartpole.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/enjoy_cartpole.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/enjoy_mountaincar.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/enjoy_mountaincar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/enjoy_pong.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/enjoy_pong.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/run_atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/run_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/train_cartpole.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/train_cartpole.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/train_mountaincar.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/experiments/train_mountaincar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/replay_buffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/replay_buffer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/deepq/simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/cnn_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/cnn_policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/mlp_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/mlp_policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/pposgd_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/pposgd_simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/run_atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/run_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo1/run_mujoco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/policies.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/policies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/ppo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/ppo2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/run_atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/run_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/ppo2/run_mujoco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/build_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/build_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/enjoy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/enjoy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/rainbow/experiments/atari/rainbow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/results_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/results_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/nosharing_cnn_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/nosharing_cnn_policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/run_atari.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/run_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/run_mujoco.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/run_mujoco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/trpo_mpi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/baselines/trpo_mpi/trpo_mpi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/crypto_gym/envs/old.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/crypto_gym/envs/old.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/data/cartpole.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/data/cartpole.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/data/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/data/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/log/events.out.tfevents.1548074275.Khrushchev" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/log/events.out.tfevents.1548074275.Khrushchev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/out/production/crypto-gym/baselines/rainbow/experiments/atari/rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/out/production/crypto-gym/baselines/rainbow/experiments/atari/rainbow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/rainbow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crypto-gym/setupbaselines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crypto-gym/setupbaselines.py" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="441919528">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cfg" value="1" />
-          <entry key="java" value="1" />
-          <entry key="py" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.rs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/A3C.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
-              <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cargo.toml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -98,73 +157,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Cargo.toml" />
-        <option value="$PROJECT_DIR$/src/main.rs" />
-        <option value="$PROJECT_DIR$/src/module-info.java" />
-        <option value="$PROJECT_DIR$/src/A3C.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="134" />
-    <option name="y" value="39" />
-    <option name="width" value="2750" />
-    <option name="height" value="2102" />
-  </component>
+  <component name="ProjectId" id="1Ti9ujTZp2xjjLoI00gGtmli2DB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="QLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534458575328" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -174,12 +182,14 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -187,6 +197,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -201,75 +223,18 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="134" y="39" width="2750" height="2102" extended-state="0" />
-    <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22727273" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="right" id="Cargo" order="7" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/module-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cargo.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/A3C.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>
